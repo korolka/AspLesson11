@@ -1,0 +1,14 @@
+﻿@model AspLesson11.Models.AddNoteModel
+<html>
+    <head>
+        <title>AddNote</title>
+    </head>
+    <body>
+        <form asp-action="AddNote">
+            <label asp-for="Text"></label>
+            <br />
+            <input asp-for="Text" />
+            <input type= "submit" value="Save" />
+        </form>
+    </body>
+</html>

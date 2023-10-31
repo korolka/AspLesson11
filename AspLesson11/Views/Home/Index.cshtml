@@ -1,0 +1,13 @@
+﻿<html>
+<head>
+    <title>Index</title>
+</head>
+<body>
+    @if (!string.IsNullOrEmpty(ViewBag.Result))
+    {
+        <text>@ViewBag.Result</text>
+    }
+    <a asp-action="AddNote">Add note</a>
+    <a asp-action="ReadListOfNotes">Read note</a>
+</body>
+</html>

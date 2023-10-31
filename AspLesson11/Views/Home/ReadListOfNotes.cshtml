@@ -1,0 +1,15 @@
+﻿@model List<AspLesson11.Database.Notes>
+
+<html>
+<head>
+    <title>Readlist</title>
+</head>
+<body>
+    <h4>Choose note: </h4>
+    @foreach (var note in Model)
+    {
+        <a asp-action="ReadNote" asp-route-noteId="@note.NoteId">Note number @note.NoteId</a>
+        <br />
+    }
+</body>
+</html>
